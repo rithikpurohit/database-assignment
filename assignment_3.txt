@@ -1,0 +1,19 @@
+Why is normalization important? What problems occur if a database is not normalized?
+
+Convert the following unnormalized data into 1NF:
+
+Order_ID	Customer_Name	Products
+101		Rahul		Laptop, Mouse
+
+
+Normalization is done to remove redundancy from the database and maintain data integrity. This is done to avoid any anomaly during inserting, updating or deleting any record from the database.
+Anomalies like - same data could be stored multiple times, deleting data in one table may lead to deletions of data in other connected table (though foreign key), etc.
+
+1NF of given table - 
+
+Order_ID	Customer_Name	Products
+101		Rahul		Laptop
+101		Rahul		Mouse
+
+
+

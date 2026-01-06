@@ -1,0 +1,10 @@
+Identify at least 3 real-world applications and specify:
+Which type of database they use (SQL / NoSQL / In-memory)
+Why that database is suitable
+	
+1. So in hospitals, there is a need to maintain patients data. Mostly, the patients data is structured. So in this case the hospital can implement a SQL database.
+Personal patient data can be stored in a table and other tables can include data like his vitals (timestamped), health related data like allergies or any other condition.
+
+2. In IoT multiple sensors collect large amount of data. And because IoT systems are scalable (i.e. we can add other sensors to the system as per our requirement), the structure of this data changes constantly. Thus we need a database which can process unstructured data. Thats where NoSQL comes into the picture. In NoSQL we can store structured as well as non-structured data (e.g. json, blob). Thus for IoT solution NoSQL like MongoDB are widely used.
+
+3. In-memory database is like temporary database. It is volatile in nature because instead of storing data in hard disk (or SSD), it stores data in RAM. And because RAM is always faster than HDD/SSD in-memory databases are faster compared to other SQL/NoSQL. This type of databases are widely used in session management, caching. They provide fast query execution and data retrival.
