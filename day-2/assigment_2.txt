@@ -1,0 +1,8 @@
+Describe a real-world system where:
+Soft deletes are required, Hard deletes are preferred.
+
+In handling financial data, it could be very risky to  permanently delete records. we could need them for analysis. So instead of deleting them we mark them as deleted, and when we are 100% sure that we wont need them in future, then we go ahead and permanently delete them.
+
+Also in e-commerce, instead of deleting data of canceled orders, we could soft delete them because they could be helpful for analysis.
+
+So soft deletion can sometimes be very useful, but hard deletes are preferred because they save storage allowing us to store more of the new data.

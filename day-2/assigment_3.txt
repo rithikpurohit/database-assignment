@@ -1,0 +1,13 @@
+A query frequently runs:
+
+SELECT * FROM bookings
+WHERE doctor_id = ?
+AND appointment_date >= ?
+AND appointment_date <= ?;
+
+Propose a composite index
+Explain column order choice.
+
+So in this case we are querying 2 columns - doctor_id and appointment_date. Because this query runs frequently, we can make it faster by creating a composite index on both doctor_id and appointment_date. Because the doctor_id is unique (primary key), we will use it as the primary index, and the secondary index will be appointment_date.
+
+CREATE INDEX idx ON Doctors (doctor_id, appointment_date);

@@ -1,0 +1,7 @@
+Given the table: orders
+id	user_id		status		created_at
+
+Suggest appropriate indexes. Explain why you chose them?
+
+So in orders table, we'll mostly query about order id or user id, so creating unique index on them makes sense.
+Also we can also create a composite index on user id and created_at so that we can query on user id and sort by created_at.
